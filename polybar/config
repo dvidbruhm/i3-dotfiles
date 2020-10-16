@@ -1,0 +1,151 @@
+[color]
+bg = #aaffffff
+fg = #424242
+accent = #ff00ff
+red = #ff0000
+
+[bar/main]
+monitor =
+monitor-fallback =
+
+bottom = true
+height = 50
+width = 100%
+font-0 = "UbuntuMono Font:16;3"
+font-1 = "UbuntuMono Nerd Font:size=35;6"
+
+line-size = 4
+line-color = #f00
+
+module-margin = 1
+padding = 5
+
+separator = ┊
+
+background = ${color.bg}
+foreground = ${color.fg}
+
+modules-left = i3
+modules-center = title date
+modules-right = weather pulseaudio themeswitch wifi power
+
+
+[module/lines]
+content-overline = ${color.bg}
+content-underline = ${color.bg}
+content-padding = 1
+
+format-overline = ${color.bg}
+format-underline = ${color.bg}
+
+label-padding = 1
+
+
+[module/i3]
+type = internal/i3
+
+label-focused = " %name% "
+label-focused-foreground = ${color.bg}
+label-focused-background = ${color.fg}
+label-focused-padding = 1
+
+label-unfocused = " %name% "
+label-unfocused-foreground = ${color.fg}
+label-unfocused-background = ${color.bg}
+label-unfocused-padding = 1
+
+label-urgent = " %name% "
+label-urgent-foreground = ${color.fg}
+label-urgent-background = ${color.red}
+label-urgent-padding = 1
+
+
+[module/date]
+type = internal/date
+interval = 30
+
+time = %H:%M
+date = %d/%m/%Y%
+
+label = %date% - %time%
+
+label-background = ${color.bg}
+label-foreground = ${color.fg}
+
+
+[module/wifi]
+type = custom/text
+
+content = ""
+content-background = ${color.bg}
+content-foreground = ${color.fg}
+click-left = ~/.config/rofi/scripts/rofi-wifi-menu.sh
+content-padding = 2
+
+
+[module/power]
+type = custom/text
+
+content = ""
+content-background = ${color.bg}
+content-foreground = ${color.fg}
+click-left = ~/.config/rofi/scripts/powermenu.sh
+content-padding = 2
+
+
+[module/title]
+type = internal/xwindow
+label-empty = No window
+label = %title%
+label-maxlen = 50
+
+label-background = ${color.bg}
+label-foreground = ${color.fg}
+
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = "   <label-volume> <bar-volume>   "
+label-volume = "" 
+label-volume-foreground = ${color.fg}
+
+format-muted = "   <label-muted> <bar-volume>   "
+label-muted = 
+label-muted-foreground = ${color.fg}
+
+bar-volume-width = 10
+bar-volume-foreground-0 = ${color.accent}
+bar-volume-foreground-1 = ${color.accent}
+bar-volume-foreground-2 = ${color.accent}
+bar-volume-foreground-3 = ${color.accent}
+bar-volume-foreground-4 = ${color.accent}
+bar-volume-foreground-5 = ${color.accent}
+bar-volume-foreground-6 = ${color.accent}
+bar-volume-gradient = false
+bar-volume-indicator = │
+bar-volume-indicator-font = 1
+bar-volume-fill = ─
+bar-volume-fill-font = 1
+bar-volume-empty = ─
+bar-volume-empty-font = 1
+bar-volume-empty-foreground = ${color.fg}
+
+
+[module/weather]
+type = custom/script
+interval = 600
+cursor-click = python3 ~/.config/polybar/weather.py
+exec = python3 ~/.config/polybar/weather.py
+
+label = %output%
+
+
+[module/themeswitch]
+type = custom/text
+
+content = " / "
+content-background = ${color.bg}
+content-foreground = ${color.fg}
+click-left = ~/.config/rofi/scripts/themeswitch_menu.sh
+content-padding = 2

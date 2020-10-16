@@ -1,0 +1,117 @@
+@import "colors.rasi"
+
+/* ########### */
+
+
+* {
+  /* General */
+  text-font:                            "Comfortaa 12";
+  icon-font:                            "Hurmit Nerd Font Mono 32";
+  icon-font-small:                      "Hurmit Nerd Font Mono 24";
+
+  option-6-listview-spacing:            10px;
+
+  menu-window-padding:                   5px 15px;
+  menu-inputbar-margin:                  10px 0px;
+  menu-prompt-padding:                   10px 20px 10px 20px;
+  menu-prompt-margin:                    0px 0px 0px -2px;
+  menu-element-border:                   10px;
+  menu-element-padding:                  3px 8px -1px -40px;
+}
+
+/* ########### */
+
+#window {
+  width: 10%;
+  height: 10%;
+}
+
+/* ########### */
+
+* {
+  background-color: @background-null;
+  text-color: @foreground-trans;
+  font: @icon-font;
+}
+
+#horibox {
+  children: [ listview ];
+}
+#listview {
+  layout: horizontal;
+}
+#element {
+  padding: @option-element-padding;
+  background-color: @background-null;
+}
+#element.selected {
+  background-color: @foreground-trans;
+  text-color: @background-trans;
+}
+
+/* ########### */
+
+* {
+  font: @text-font;
+}
+#window {
+  padding: @menu-window-padding;
+  children: [ inputbar, horibox ];
+  background-color: @background-trans;
+}
+#inputbar {
+  children: [ textbox-prompt-colon, prompt ];
+  margin: @menu-inputbar-margin;
+}
+prompt,
+textbox-prompt-colon {
+  padding: @menu-prompt-padding;
+  border: 1px;
+  border-color: @foreground-trans;
+}
+#prompt {
+  margin: @menu-prompt-margin;
+  background-color: @background-null;
+  text-color: @foreground-trans;
+}
+#textbox-prompt-colon {
+  expand: false;
+  str: "System";
+  background-color: @foreground-trans;
+  text-color: @background-trans;
+}
+#horibox {
+  padding: 0px;
+}
+#listview {
+  spacing: @option-6-listview-spacing;
+  lines: 5;
+}
+#element {
+  font: @icon-font;
+  border: @menu-element-border;
+  padding: @menu-element-padding;
+  border-color: @background-null;
+}
+#element.selected {
+  border-color: @foreground-null;
+}
+element.active,
+element.selected.urgent {
+  background-color: @background-trans;
+  text-color: @background-trans;
+  border-color: @background-trans;
+}
+element.selected.urgent {
+  border-color: @foreground-trans;
+}
+element.urgent,
+element.selected.active {
+  background-color: @background-trans;
+  text-color: @background-trans;
+  border-color: @background-trans;
+}
+element.selected.active {
+  border-color: @foreground-trans;
+}
+

@@ -1,0 +1,26 @@
+@import "colors.rasi"
+
+* {
+    background-color: @background-null;
+    border-color: @foreground;
+    text-color: @foreground;
+}
+
+window {
+    padding: 0 16 16 16;
+    background-color: @background-trans;
+}
+
+inputbar {
+  padding: 8px;
+  border: 0 0 3 dash 0;
+}
+
+element {
+    padding: 2 0 2 0;
+}
+
+element selected {
+  text-color: @background;
+  background-color: @foreground-trans;
+}

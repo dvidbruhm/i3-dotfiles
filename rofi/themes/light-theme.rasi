@@ -1,0 +1,55 @@
+configuration {
+    location: 0;
+    yoffset: 0;
+    xoffset: 0;
+    columns: 1;
+    lines: 8;
+    font: "UbuntuMono Nerd 20";
+}
+
+@import "colors.rasi"
+* {
+  background-color: @background-null;
+  window-color: @background;
+  border-color: @foreground-trans;
+  text-color: @foreground;
+  spacing: 0;
+  width: 1000px;
+}
+
+inputbar {
+  border: 0 0 3px dash 0;
+  children: [prompt,entry];
+}
+
+window {
+  padding: 500 900 400 900;
+  background-color: @background-trans;
+}
+
+prompt {
+  padding: 16px;
+}
+
+textbox {
+  background-color: @background-trans;
+  padding: 8px 16px;
+}
+
+entry {
+  padding: 16px;
+}
+
+listview {
+  cycle: false;
+  scrollbar: false;
+}
+
+element {
+  padding: 16px;
+}
+
+element selected {
+  text-color: @background;
+  background-color: @foreground-trans;
+}

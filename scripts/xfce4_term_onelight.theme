@@ -1,0 +1,9 @@
+Name=One Light
+ColorForeground=#383A42
+ColorCursor=#A0A1A7
+ColorBackground=#f9f9f9
+ColorSelection=#5c6370
+ColorSelectionUseDefault=FALSE
+ColorBold=#383A42
+ColorBoldUseDefault=FALSE
+ColorPalette=#000000;#E45649;#50A14F;#986801;#4078F2;#A626A4;#0184BC;#A0A1A7;#5c6370;#e06c75;#50A14F;#986801;#4078F2;#A626A4;#0184BC;#ffffff
