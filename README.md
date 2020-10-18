@@ -3,15 +3,15 @@ My personal dotfiles for my i3 setup with rofi, polybar, xfce4-terminal, dunst, 
 
 Here is my setup:
 
-- **WM : ** [i3-gaps](https://github.com/Airblader/i3)
-- **OS : ** [Endeavour OS](https://endeavouros.com/)
-- **Shell : ** [zsh](https://wiki.archlinux.org/index.php/zsh) + [Oh My Zsh](https://ohmyz.sh/)
-- **Terminal : ** Xfce4 terminal
-- **Editor : ** [Neovim](https://neovim.io/) + [config](https://github.com/dvidbruhm/neovim-config)
-- **File manager : ** Thunar
-- **Launcher : ** [rofi](https://github.com/davatorium/rofi)
-- **Browser : ** Firefox
-- **Notifications : ** [dunst](https://github.com/dunst-project/dunst)
+- **WM :** [i3-gaps](https://github.com/Airblader/i3)
+- **OS :** [Endeavour OS](https://endeavouros.com/)
+- **Shell :** [zsh](https://wiki.archlinux.org/index.php/zsh) + [Oh My Zsh](https://ohmyz.sh/)
+- **Terminal :** Xfce4 terminal
+- **Editor :** [Neovim](https://neovim.io/) + [config](https://github.com/dvidbruhm/neovim-config)
+- **File manager :** Thunar
+- **Launcher :** [rofi](https://github.com/davatorium/rofi)
+- **Browser :** Firefox
+- **Notifications :** [dunst](https://github.com/dunst-project/dunst)
 
 # Setup
 
