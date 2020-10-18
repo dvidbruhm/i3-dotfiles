@@ -1,6 +1,8 @@
 # i3-dotfiles
 My personal dotfiles for my i3 setup with rofi, polybar, xfce4-terminal, dunst, and scripts to toggle dark/light mode.
 
+<img src="screenshots/demo.jpg" alt="img" align="right" width="400px">
+
 Here is my setup:
 
 - **WM :** [i3-gaps](https://github.com/Airblader/i3)
@@ -24,7 +26,7 @@ Here is my setup:
 2. Install other dependencies (rofi, xfce4-terminal, thunar, :
 
     ```
-    yay -S rofi xfce4-terminal thunar pulseaudio dunst feh polybar
+    yay -S rofi xfce4-terminal thunar pulseaudio dunst feh polybar compton
     ```
 
 3. Install required fonts from this repo by copying the content of ```fonts/``` in either ```~/.local/share/fonts/``` or ```~/.fonts/```. Then update your fonts:
@@ -43,3 +45,25 @@ Here is my setup:
     ```
 
 5. Boot into i3 and everything should be good to go!
+
+
+# Screenshots
+
+## Light theme
+
+![alt text](screenshots/light.png "Light theme")
+![alt text](screenshots/light-menu.png "Light theme")
+![alt text](screenshots/light-power.png "Light theme")
+![alt text](screenshots/light-wifi.png "Light theme")
+![alt text](screenshots/light-theme.png "Light theme")
+
+
+## Dark theme
+
+
+
+![alt text](screenshots/dark.png "Dark theme")
+![alt text](screenshots/dark-menu.png "Dark theme")
+![alt text](screenshots/dark-power.png "Dark theme")
+![alt text](screenshots/dark-wifi.png "Dark theme")
+![alt text](screenshots/dark-theme.png "Dark theme")
