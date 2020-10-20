@@ -23,11 +23,16 @@ Here is my setup:
     yay -S i3-gaps
     ```
     
-2. Install other dependencies (rofi, xfce4-terminal, thunar, :
+2. Install other dependencies (rofi, xfce4-terminal, thunar, ...) :
 
     ```
     yay -S rofi xfce4-terminal thunar pulseaudio dunst feh polybar compton
     ```
+    
+    (TODO: make these requirements optional) there are also these requirements:
+    
+    - ```spicetify``` (+ spotify) to theme spotify
+    - ```i3-agenda``` to display next google calendar event on polybar
 
 3. Install required fonts from this repo by copying the content of ```fonts/``` in either ```~/.local/share/fonts/``` or ```~/.fonts/```. Then update your fonts:
 
