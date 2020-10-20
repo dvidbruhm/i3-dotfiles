@@ -50,9 +50,10 @@ elif [[ "$CONSTATE" =~ "disabled" ]]; then
 	TOGGLE="toggle on"
 fi
 
+# Get current connected wifi name
+currentssid=$(iwgetid -r)
 
-
-CHENTRY=$(echo -e "$TOGGLE\nmanual\n$LIST" | uniq -u | rofi -dmenu -p "Wi-Fi SSID: " -lines "$LINENUM" -a "$HIGHLINE" -location "$POSITION" -font "$FONT" -width -"$RWIDTH" -theme themes/wifi_menu_theme)
+CHENTRY=$(echo -e "$TOGGLE\nmanual\n$LIST" | uniq -u | rofi -dmenu -p "Wi-Fi SSID [$currentssid] : " -lines "$LINENUM" -a "$HIGHLINE" -location "$POSITION" -font "$FONT" -width -"$RWIDTH" -theme themes/wifi_menu_theme)
 #echo "$CHENTRY"
 CHSSID=$(echo "$CHENTRY" | sed  's/\s\{2,\}/\|/g' | awk -F "|" '{print $1}')
 #echo "$CHSSID"

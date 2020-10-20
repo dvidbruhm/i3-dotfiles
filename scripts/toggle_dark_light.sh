@@ -62,6 +62,10 @@ function darktolight {
 
     # Change gtk theme
     sed -i "s/gtk-theme-name=.*/gtk-theme-name=$gtklight/g" $gtk
+
+    # Set spotify theme
+    spicetify config current_theme Dribbblish color_scheme Nord-Light
+    spicetify apply
 }
 
 function lighttodark {
@@ -103,6 +107,10 @@ function lighttodark {
 
     # Change gtk theme
     sed -i "s/gtk-theme-name=.*/gtk-theme-name=$gtkdark/g" $gtk
+
+    # Set spotify theme
+    spicetify config current_theme Dribbblish color_scheme Nord-Dark
+    spicetify apply
 }
 
 function restartall {

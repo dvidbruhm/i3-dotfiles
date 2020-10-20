@@ -1,6 +1,6 @@
 [color]
-bg = #aaffffff
-fg = #424242
+bg = #55424242
+fg = #ffffff
 accent = #ff00ff
 red = #ff0000
 
@@ -25,9 +25,9 @@ separator = ┊
 background = ${color.bg}
 foreground = ${color.fg}
 
-modules-left = i3
-modules-center = title date
-modules-right = weather pulseaudio themeswitch wifi power
+modules-left = i3 date
+modules-center = title
+modules-right = agenda weather pulseaudio themeswitch wifi power
 
 
 [module/lines]
@@ -65,7 +65,7 @@ type = internal/date
 interval = 30
 
 time = %H:%M
-date = %d/%m/%Y%
+date = %d %b
 
 label = %date% - %time%
 
@@ -149,3 +149,16 @@ content-background = ${color.bg}
 content-foreground = ${color.fg}
 click-left = ~/.config/rofi/scripts/themeswitch_menu.sh
 content-padding = 2
+
+
+[module/agenda]
+type = custom/script
+; Show the next event and forget cache automatically every 60 minutes
+exec = ~/Applications/miniconda3/bin/i3-agenda -c ~/Downloads/credentials.json -ttl 60
+; left click to launch Google Calendar
+click-left = firefox https://calendar.google.com/calendar/r/day
+; right click force update the cache, if for example you just added a new event
+click-right = notify-send "syncing..." && i3-agenda -c ~/.google_credentials.json --update && notify-send -t 2000 "sync finished"
+interval = 60
+
+label = %output%

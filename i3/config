@@ -31,7 +31,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 exec --no-startup-id compton
-exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper1.jpg
+exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -190,13 +190,13 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #424242 #285577 #ffffff #424242   #424242
-client.focused_inactive #ffffff #5f676a #ffffff #ffffff   #ffffff
-client.unfocused        #ffffff #222222 #ffffff #ffffff   #ffffff
-client.urgent           #ff0000 #900000 #ffffff #ff0000   #ff0000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.focused          #ffffff #285577 #424242 #ffffff   #ffffff
+client.focused_inactive #424242 #5f676a #424242 #424242   #424242
+client.unfocused        #424242 #222222 #424242 #424242   #424242
+client.urgent           #ff0000 #900000 #424242 #ff0000   #ff0000
+client.placeholder      #000000 #0c0c0c #424242 #000000   #0c0c0c
 
-client.background       #ffffff
+client.background       #424242
 
 ##### i3-gaps ##############
 for_window [class=".*"] border pixel 3 #*
