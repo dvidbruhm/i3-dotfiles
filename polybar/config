@@ -13,6 +13,7 @@ height = 50
 width = 100%
 font-0 = "UbuntuMono Font:16;3"
 font-1 = "UbuntuMono Nerd Font:size=35;6"
+font-2 = "Weather Icons:size=24;4"
 
 line-size = 4
 line-color = #f00
@@ -134,10 +135,10 @@ bar-volume-empty-foreground = ${color.fg}
 
 [module/weather]
 type = custom/script
+exec = ~/.config/polybar-forecast/polybar-forecast-linux-x86_64
+exec-if = ping openweathermap.org -c 1
 interval = 600
-cursor-click = python3 ~/.config/polybar/weather.py
-exec = python3 ~/.config/polybar/weather.py
-
+label-font = 3
 label = %output%
 
 
@@ -158,4 +159,4 @@ click-left = firefox https://calendar.google.com/calendar/r/day
 click-right = notify-send "i3-agenda" "Syncing..." && ~/Applications/miniconda3/bin/i3-agenda -c ~/Downloads/credentials.json --update --today --no-event-text "No event today" && notify-send "i3-agenda" "Sync finished"
 interval = 60
 
-label = %output%
+label =  %output%
