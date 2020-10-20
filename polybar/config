@@ -153,12 +153,9 @@ content-padding = 2
 
 [module/agenda]
 type = custom/script
-; Show the next event and forget cache automatically every 60 minutes
-exec = ~/Applications/miniconda3/bin/i3-agenda -c ~/Downloads/credentials.json -ttl 60
-; left click to launch Google Calendar
+exec = ~/Applications/miniconda3/bin/i3-agenda -c ~/Downloads/credentials.json -ttl 10 --today --no-event-text "No event today"
 click-left = firefox https://calendar.google.com/calendar/r/day
-; right click force update the cache, if for example you just added a new event
-click-right = notify-send "syncing..." && i3-agenda -c ~/.google_credentials.json --update && notify-send -t 2000 "sync finished"
+click-right = notify-send "i3-agenda" "Syncing..." && ~/Applications/miniconda3/bin/i3-agenda -c ~/Downloads/credentials.json --update --today --no-event-text "No event today" && notify-send "i3-agenda" "Sync finished"
 interval = 60
 
 label = %output%
