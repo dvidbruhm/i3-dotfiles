@@ -1,11 +1,11 @@
 * {
   accent: #FF00cc;
-  foreground: #ffffff;
-  foreground-trans: #ffffffcc;
-  foreground-null: #ffffff00;
-  background: #424242;
-  background-trans: #424242cc;
-  background-null: #42424200;
+  foreground: #424242;
+  foreground-trans: #424242cc;
+  foreground-null: #42424200;
+  background: #ffffff;
+  background-trans: #ffffffcc;
+  background-null: #ffffff00;
   on:               #66bb6a;
   off:              #ef5350;
 }

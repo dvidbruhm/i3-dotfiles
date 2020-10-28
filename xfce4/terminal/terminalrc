@@ -23,7 +23,7 @@ MiscTabPosition=GTK_POS_TOP
 MiscHighlightUrls=TRUE
 MiscMiddleClickOpensUri=FALSE
 MiscCopyOnSelect=FALSE
-MiscShowRelaunchDialog=TRUE
+MiscShowRelaunchDialog=FALSE
 MiscRewrapOnResize=TRUE
 MiscUseShiftArrowsToScroll=FALSE
 MiscSlimTabs=TRUE
@@ -31,14 +31,21 @@ MiscNewTabAdjacent=FALSE
 ScrollingUnlimited=TRUE
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
 TextBlinkMode=TERMINAL_TEXT_BLINK_MODE_FOCUSED
-FontUseSystem=TRUE
 TitleMode=TERMINAL_TITLE_REPLACE
-ColorForeground=#ABB2BF
-ColorCursor=#ABB2BF
-ColorBackground=#282C34
-ColorSelection=#3B4451
-ColorSelectionUseDefault=FALSE
-ColorBold=#B9C0CB
-ColorBoldUseDefault=FALSE
-ColorPalette=#282C34;#E06C75;#98C379;#E5C07B;#61AFEF;#C678DD;#56B6C2;#ABB2BF;#3E4452;#BE5046;#98C379;#D19A66;#61AFEF;#C678DD;#56B6C2;#5C6370
 
+
+
+
+
+
+
+
+Font\nName=One Dark\nName=One Light
+ColorForeground=#383A42
+ColorCursor=#A0A1A7
+ColorBackground=#f9f9f9
+ColorSelection=#5c6370
+ColorSelectionUseDefault=FALSE
+ColorBold=#383A42
+ColorBoldUseDefault=FALSE
+ColorPalette=#000000;#E45649;#50A14F;#986801;#4078F2;#A626A4;#0184BC;#A0A1A7;#5c6370;#e06c75;#50A14F;#986801;#4078F2;#A626A4;#0184BC;#ffffff

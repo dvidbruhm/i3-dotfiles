@@ -47,6 +47,9 @@ floating_modifier $mod
 # bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec xfce4-terminal
 
+# Drop down terminal
+bindsym $mod+a exec xfce4-terminal --drop-down
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -107,7 +110,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+#bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -190,24 +193,19 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #ffffff #285577 #424242 #ffffff   #ffffff
-client.focused_inactive #424242 #5f676a #424242 #424242   #424242
-client.unfocused        #424242 #222222 #424242 #424242   #424242
-client.urgent           #ff0000 #900000 #424242 #ff0000   #ff0000
-client.placeholder      #000000 #0c0c0c #424242 #000000   #0c0c0c
+client.focused          #424242 #285577 #ffffff #424242   #424242
+client.focused_inactive #ffffff #5f676a #ffffff #ffffff   #ffffff
+client.unfocused        #ffffff #222222 #ffffff #ffffff   #ffffff
+client.urgent           #ff0000 #900000 #ffffff #ff0000   #ff0000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
-client.background       #424242
+client.background       #ffffff
 
 ##### i3-gaps ##############
-for_window [class=".*"] border pixel 3 #*
+for_window [class=".*"] border pixel 3
 gaps inner 30
 gaps outer 1
 #gaps horizontal 2
-
-################# i3-radius #######################
-smart_borders on
-smart_borders no_gaps
-border_radius 0
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
