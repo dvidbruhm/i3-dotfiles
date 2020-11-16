@@ -13,14 +13,14 @@ xfce4darktheme="/home/david/.config/scripts/xfce4_term_onedark.theme"
 gtklight="Arc-Lighter"
 gtkdark="Arc-Dark"
 
-dark=#424242
+dark=#282C34
 light=#ffffff
-darktrans=#55424242
+darktrans=#CC282C34
 lighttrans=#aaffffff
 
-fromdark=#424242
+fromdark=#282C34
 fromlight=#ffffff
-fromdarktrans=#55424242
+fromdarktrans=#CC282C34
 fromlighttrans=#aaffffff
 
 function darktolight {
@@ -65,7 +65,7 @@ function darktolight {
 
     # Set spotify theme
     spicetify config current_theme Dribbblish color_scheme Nord-Light
-    spicetify apply
+    apply_spotify
 }
 
 function lighttodark {
@@ -110,8 +110,18 @@ function lighttodark {
 
     # Set spotify theme
     spicetify config current_theme Dribbblish color_scheme Nord-Dark
-    spicetify apply
+    apply_spotify
 }
+
+function apply_spotify {
+    if [[ $(pgrep -x -c spotify) == "0" ]];
+    then
+        spicetify apply -n
+    else
+        spicetify apply
+    fi
+}
+
 
 function restartall {
     # Restart dunst

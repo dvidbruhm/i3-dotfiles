@@ -193,13 +193,13 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #424242 #285577 #ffffff #424242   #424242
-client.focused_inactive #ffffff #5f676a #ffffff #ffffff   #ffffff
-client.unfocused        #ffffff #222222 #ffffff #ffffff   #ffffff
-client.urgent           #ff0000 #900000 #ffffff #ff0000   #ff0000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.focused          #282C34 #285577 #282C34 #ffffff   #ffffff
+client.focused_inactive #282C34 #5f676a #282C34 #282C34   #282C34
+client.unfocused        #282C34 #222222 #282C34 #282C34   #282C34
+client.urgent           #ff0000 #900000 #282C34 #ff0000   #ff0000
+client.placeholder      #000000 #0c0c0c #282C34 #000000   #0c0c0c
 
-client.background       #ffffff
+client.background       #282C34
 
 ##### i3-gaps ##############
 for_window [class=".*"] border pixel 3
