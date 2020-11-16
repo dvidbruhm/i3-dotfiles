@@ -26,7 +26,7 @@ Here is my setup:
 2. Install other dependencies (rofi, xfce4-terminal, thunar, ...) :
 
     ```
-    yay -S rofi xfce4-terminal thunar pulseaudio dunst feh polybar compton
+    yay -S rofi xfce4-terminal thunar pulseaudio dunst feh polybar picom
     ```
     
     (TODO: make these requirements optional) there are also these requirements:
@@ -46,7 +46,7 @@ Here is my setup:
     git clone https://github.com/dvidbruhm/i3-dotfiles.git
     cd i3-dotfiles/
     # At this point you should probably do a backup of your config
-    cp -r dunst gtk-3.0 i3 polybar rofi scripts xfce4 ~/.config
+    cp -r dunst gtk-3.0 i3 polybar rofi scripts xfce4 picom.conf ~/.config
     ```
 
 5. Boot into i3 and everything should be good to go!
