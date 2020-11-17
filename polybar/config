@@ -165,7 +165,7 @@ label =  %output%
 [module/spotifyplaypause]
 type = custom/text
 
-content = ""
+content = ""
 content-background = ${color.bg}
 content-foreground = ${color.fg}
 click-left = dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
