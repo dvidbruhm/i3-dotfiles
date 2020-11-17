@@ -37,6 +37,7 @@ Here is my setup:
     **Note:** most recent rofi version (1.6) does not work with these dotfiles as it changed the way it handles width and heights values. Here is a version of rofi that works (to freeze this version of rofi when updating with pacman, add ```IgnorePkg = rofi``` in ```/etc/pacman.conf```:
     
     ```
+    # Download the older rofi version from : https://archive.archlinux.org/packages/r/rofi/rofi-1.5.4-1-x86_64.pkg.tar.xz
     pacman -U Downloads/rofi-1.5.4-1-x86_64.pkg.tar.xz
     ```
 
