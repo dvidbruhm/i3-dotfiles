@@ -34,6 +34,12 @@ Here is my setup:
     - ```spicetify``` (+ spotify) to theme spotify
     - ```i3-agenda``` to display next google calendar event on polybar
 
+    **Note:** most recent rofi version (1.6) does not work with these dotfiles as it changed the way it handles width and heights values. Here is a version of rofi that works (to freeze this version of rofi when updating with pacman, add ```IgnorePkg = rofi``` in ```/etc/pacman.conf```:
+    
+    ```
+    pacman -U Downloads/rofi-1.5.4-1-x86_64.pkg.tar.xz
+    ```
+
 3. Install required fonts from this repo by copying the content of ```fonts/``` in either ```~/.local/share/fonts/``` or ```~/.fonts/```. Then update your fonts:
 
     ```
