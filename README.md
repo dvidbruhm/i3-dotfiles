@@ -31,7 +31,7 @@ Here is my setup:
     
     (TODO: make these requirements optional) there are also these requirements:
     
-    - ```spicetify``` (+ spotify) to theme spotify
+    - ```spicetify``` (+ ```spotify```) to theme spotify
     - ```i3-agenda``` to display next google calendar event on polybar
 
     **Note:** most recent rofi version (1.6) does not work with these dotfiles as it changed the way it handles width and heights values. Here is a version of rofi that works (to freeze this version of rofi when updating with pacman, add ```IgnorePkg = rofi``` in ```/etc/pacman.conf```:
