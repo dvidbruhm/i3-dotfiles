@@ -17,4 +17,4 @@ city_id = "6077243"
 # - forecast_kelvin
 # - forecast_fahrenheit
 # - forecast_icon
-display = "{{ temp_icon }} %{T1} {{ temp_celcius }}°C %{T3}  {{ forecast_icon }} %{T1} {{ forecast_celcius }}°C %{T-} "
+display = "{{ temp_icon }} %{T1} {{ temp_celcius }}°C %{T3}"
